@@ -2,15 +2,15 @@
 /**
 *	Add Premium Listing Example.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
 require_once(__DIR__.'/../vendor/autoload.php');
 
-use Frozensheep\RightmoveADF\RightmoveADF;
+use Craiglockhart81\RightmoveADF\RightmoveADF;
 
 //include the config file
 require_once('config.php');
@@ -24,11 +24,11 @@ $objRequest = $objRightmoveADF->createRequest(RightmoveADF::AddPremiumListing);
 //set the details for the request
 $objRequest->network->network_id = NETWORK_ID;
 $objRequest->branch->branch_id = BRANCH_ID;
-$objRequest->branch->channel = Frozensheep\RightmoveADF\Values\Channels::Lettings;
+$objRequest->branch->channel = Craiglockhart81\RightmoveADF\Values\Channels::Lettings;
 $objRequest->property->agent_ref = PROPERTY_REF;
-$objRequest->property->premium_listing->display_type = Frozensheep\RightmoveADF\Values\DisplayTypes::OneLargeTwoSmall;
-//$objRequest->property->premium_listing->resale_stamp_text = Frozensheep\RightmoveADF\Values\StampTexts::NoChain;
-$objRequest->property->premium_listing->lettings_stamp_text = Frozensheep\RightmoveADF\Values\StampTexts::PeriodProperty;
+$objRequest->property->premium_listing->display_type = Craiglockhart81\RightmoveADF\Values\DisplayTypes::OneLargeTwoSmall;
+//$objRequest->property->premium_listing->resale_stamp_text = Craiglockhart81\RightmoveADF\Values\StampTexts::NoChain;
+$objRequest->property->premium_listing->lettings_stamp_text = Craiglockhart81\RightmoveADF\Values\StampTexts::PeriodProperty;
 $objRequest->property->premium_listing->web_flag = true;
 $objRequest->property->premium_listing->mobile_flag = true;
 

@@ -2,22 +2,22 @@
 /**
 *	This file contains the Entrance Floors Enum class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Values;
+namespace Craiglockhart81\RightmoveADF\Values;
 
-use Frozensheep\RightmoveADF\Values\ValuesBase;
+use Craiglockhart81\RightmoveADF\Values\ValuesBase;
 
 /**
 *	Entrance Floors Enum Class
 *
 *	Class for the different entrance floors.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class EntranceFloors extends ValuesBase {

@@ -2,22 +2,22 @@
 /**
 *	This file contains the Stamp Texts Enum class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Values;
+namespace Craiglockhart81\RightmoveADF\Values;
 
-use Frozensheep\RightmoveADF\Values\ValuesBase;
+use Craiglockhart81\RightmoveADF\Values\ValuesBase;
 
 /**
 *	Stamp Texts Enum Class
 *
 *	Class for the different Stamp Text options.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class StampTexts extends ValuesBase {

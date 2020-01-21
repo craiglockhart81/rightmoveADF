@@ -2,25 +2,25 @@
 /**
 *	This file contains the Add Premium Listing Request model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Request;
+namespace Craiglockhart81\RightmoveADF\Request;
 
-use Frozensheep\RightmoveADF\Request\RequestBase;
-use Frozensheep\RightmoveADF\Groups\Network;
-use Frozensheep\RightmoveADF\Groups\Branch;
-use Frozensheep\RightmoveADF\Groups\PropertyPremium;
+use Craiglockhart81\RightmoveADF\Request\RequestBase;
+use Craiglockhart81\RightmoveADF\Groups\Network;
+use Craiglockhart81\RightmoveADF\Groups\Branch;
+use Craiglockhart81\RightmoveADF\Groups\PropertyPremium;
 
 /**
 *	Add Premium Listing Class
 *
 *	Class for the add premium listing request.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class AddPremiumListing extends RequestBase {
@@ -39,8 +39,8 @@ class AddPremiumListing extends RequestBase {
 	*	@var array $arrSynthesize The synthesize array.
 	*/
 	protected $arrSynthesize = array(
-		'network' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Network', 'required' => true),
-		'branch' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Branch', 'required' => true),
-		'property' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\PropertyPremium', 'required' => true)
+		'network' => array('type' => 'object', 'class' => 'Craiglockhart81\RightmoveADF\Groups\Network', 'required' => true),
+		'branch' => array('type' => 'object', 'class' => 'Craiglockhart81\RightmoveADF\Groups\Branch', 'required' => true),
+		'property' => array('type' => 'object', 'class' => 'Craiglockhart81\RightmoveADF\Groups\PropertyPremium', 'required' => true)
 	);
 }

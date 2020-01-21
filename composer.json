@@ -1,30 +1,30 @@
 {
-	"name": "frozensheep/rightmove-adf",
+	"name": "craiglockhart81/rightmove-adf",
 	"type": "library",
 	"description": "PHP library for the Rightmove Real Time Property Datafeed (ADF).",
 	"keywords": ["rightmove", "api", "adf", "property", "renting", "sales", "real estate", "data feed", "feed"],
-	"homepage": "https://github.com/frozensheep/rightmoveADF",
+	"homepage": "https://github.com/craiglockhart81/rightmoveADF",
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "Jacob Wyke",
-			"email": "jacob@frozensheep.com",
-			"homepage": "https://frozensheep.com"
+			"name": "Craig Lockhart",
+			"email": "craig@hartcreative.co.uk",
+			"homepage": "https://hartcreative.co.uk"
 		}
 	],
 	"require": {
 		"php": ">=5.4",
 		"ext-curl": "*",
-		"frozensheep/synthesize": "1.*"
+		"craiglockhart81/synthesize": "1.*"
 	},
 	"autoload": {
 		"psr-4": {
-			"Frozensheep\\RightmoveADF\\": "src"
+			"Craiglockhart81\\RightmoveADF\\": "src"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Frozensheep\\RightmoveADF\\Tests\\": "tests"
+			"Craiglockhart81\\RightmoveADF\\Tests\\": "tests"
 		}
 	}
 }

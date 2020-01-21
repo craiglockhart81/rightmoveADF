@@ -2,24 +2,24 @@
 /**
 *	This file contains the Get Branch Performance Request model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Request;
+namespace Craiglockhart81\RightmoveADF\Request;
 
-use Frozensheep\RightmoveADF\Request\RequestBase;
-use Frozensheep\RightmoveADF\Groups\Network;
-use Frozensheep\RightmoveADF\Groups\Branch;
+use Craiglockhart81\RightmoveADF\Request\RequestBase;
+use Craiglockhart81\RightmoveADF\Groups\Network;
+use Craiglockhart81\RightmoveADF\Groups\Branch;
 
 /**
 *	Get Branch Property List Class
 *
 *	Class for the get branch performance request.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class GetBranchPerformance extends RequestBase {
@@ -38,8 +38,8 @@ class GetBranchPerformance extends RequestBase {
 	*	@var array $arrSynthesize The synthesize array.
 	*/
 	protected $arrSynthesize = array(
-		'network' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Network', 'required' => true),
-		'branch' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Branch', 'required' => true),
+		'network' => array('type' => 'object', 'class' => 'Craiglockhart81\RightmoveADF\Groups\Network', 'required' => true),
+		'branch' => array('type' => 'object', 'class' => 'Craiglockhart81\RightmoveADF\Groups\Branch', 'required' => true),
 		'export_date' => array('type' => 'datetime', 'format' => 'd-m-Y')
 	);
 }

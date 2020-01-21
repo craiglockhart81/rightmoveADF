@@ -2,23 +2,23 @@
 /**
 *	This file contains the Property Ref Group model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Groups;
+namespace Craiglockhart81\RightmoveADF\Groups;
 
-use Frozensheep\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
+use Craiglockhart81\RightmoveADF\Groups\GroupInterface;
+use Craiglockhart81\Synthesize\Synthesizer;
 
 /**
 *	Property Ref Group Class
 *
 *	Class to handle Property Ref group.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class PropertyRef implements GroupInterface, \JsonSerializable {

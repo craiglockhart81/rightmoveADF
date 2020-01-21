@@ -2,15 +2,15 @@
 /**
 *	Send Property Example
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
 require_once(__DIR__.'/../vendor/autoload.php');
 
-use Frozensheep\RightmoveADF\RightmoveADF;
+use Craiglockhart81\RightmoveADF\RightmoveADF;
 
 //include the config file
 require_once('config.php');
@@ -24,7 +24,7 @@ $objRequest = $objRightmoveADF->createRequest(RightmoveADF::SendProperty);
 //set the details for the request
 $objRequest->network->network_id = NETWORK_ID;
 $objRequest->branch->branch_id = BRANCH_ID;
-$objRequest->branch->channel = Frozensheep\RightmoveADF\Values\Channels::Lettings;
+$objRequest->branch->channel = Craiglockhart81\RightmoveADF\Values\Channels::Lettings;
 //$objRequest->branch->overseas = false;
 $objRequest->property->agent_ref = PROPERTY_REF;
 
@@ -32,8 +32,8 @@ $objRequest->property->agent_ref = PROPERTY_REF;
 //property details
 //
 $objRequest->property->published = true;
-$objRequest->property->property_type = Frozensheep\RightmoveADF\Values\PropertyTypes::GroundFloorFlat;
-$objRequest->property->status = Frozensheep\RightmoveADF\Values\Statuses::Available;
+$objRequest->property->property_type = Craiglockhart81\RightmoveADF\Values\PropertyTypes::GroundFloorFlat;
+$objRequest->property->status = Craiglockhart81\RightmoveADF\Values\Statuses::Available;
 //$objRequest->property->new_home = false;
 //$objRequest->property->student_property = true;
 //$objRequest->property->house_flat_share = false;
@@ -42,7 +42,7 @@ $objRequest->property->status = Frozensheep\RightmoveADF\Values\Statuses::Availa
 //$objRequest->property->date_available = 'next Tuesday';
 //$objRequest->property->contract_months = 12;
 //$objRequest->property->minimum_term = 6;
-//$objRequest->property->let_type = Frozensheep\RightmoveADF\Values\LetTypes::LongTerm;
+//$objRequest->property->let_type = Craiglockhart81\RightmoveADF\Values\LetTypes::LongTerm;
 
 //
 //address details
@@ -67,11 +67,11 @@ $objRequest->property->address->display_address = 'Sir Matt Busby Way';
 //price details
 //
 $objRequest->property->price_information->price = 700.00;
-//$objRequest->property->price_information->price_qualifier = Frozensheep\RightmoveADF\Values\PriceQualifiers::Defaults;
+//$objRequest->property->price_information->price_qualifier = Craiglockhart81\RightmoveADF\Values\PriceQualifiers::Defaults;
 //$objRequest->property->price_information->deposit = 1100;
 //$objRequest->property->price_information->administration_fee = 'Admin fee is equal to one weeks rent per person. Tenancy resigns are one week rent per person. All prices are exclusive of VAT.';
-//$objRequest->property->price_information->rent_frequency = Frozensheep\RightmoveADF\Values\RentFrequencies::Monthly;
-//$objRequest->property->price_information->tenure_type = Frozensheep\RightmoveADF\Values\TenureTypes::Freehold;
+//$objRequest->property->price_information->rent_frequency = Craiglockhart81\RightmoveADF\Values\RentFrequencies::Monthly;
+//$objRequest->property->price_information->tenure_type = Craiglockhart81\RightmoveADF\Values\TenureTypes::Freehold;
 //$objRequest->property->price_information->auction = true;
 //$objRequest->property->price_information->tenure_unexpired_years = 75;
 //$objRequest->property->price_information->price_per_unit_area = 375;
@@ -88,27 +88,27 @@ $objRequest->property->details->description = 'This is the full property descrip
 $objRequest->property->details->bedrooms = 2;
 //$objRequest->property->details->bathrooms = 2;
 //$objRequest->property->details->reception_rooms = 1;
-//$objRequest->property->details->parking()[] = Frozensheep\RightmoveADF\Values\Parkings::Allocated;
-//$objRequest->property->details->parking()[] = Frozensheep\RightmoveADF\Values\Parkings::OnStreet;
-//$objRequest->property->details->outside_space()[] = Frozensheep\RightmoveADF\Values\OutsideSpaces::CommunalGarden;
-//$objRequest->property->details->outside_space()[] = Frozensheep\RightmoveADF\Values\OutsideSpaces::Terrace;
+//$objRequest->property->details->parking()[] = Craiglockhart81\RightmoveADF\Values\Parkings::Allocated;
+//$objRequest->property->details->parking()[] = Craiglockhart81\RightmoveADF\Values\Parkings::OnStreet;
+//$objRequest->property->details->outside_space()[] = Craiglockhart81\RightmoveADF\Values\OutsideSpaces::CommunalGarden;
+//$objRequest->property->details->outside_space()[] = Craiglockhart81\RightmoveADF\Values\OutsideSpaces::Terrace;
 //$objRequest->property->details->year_built = 1909;
 //$objRequest->property->details->internal_area = 1500;
-//$objRequest->property->details->internal_area_unit = Frozensheep\RightmoveADF\Values\AreaUnits::SqFt;
+//$objRequest->property->details->internal_area_unit = Craiglockhart81\RightmoveADF\Values\AreaUnits::SqFt;
 //$objRequest->property->details->land_area = 4000;
-//$objRequest->property->details->land_area_unit = Frozensheep\RightmoveADF\Values\AreaUnits::SqFt;
+//$objRequest->property->details->land_area_unit = Craiglockhart81\RightmoveADF\Values\AreaUnits::SqFt;
 //$objRequest->property->details->minimum = 20;
 //$objRequest->property->details->maximum = 100;
-//$objRequest->property->details->area_unit = Frozensheep\RightmoveADF\Values\AreaUnits::SqFt;
+//$objRequest->property->details->area_unit = Craiglockhart81\RightmoveADF\Values\AreaUnits::SqFt;
 //$objRequest->property->details->floors = 3;
-//$objRequest->property->details->entrance_floor = Frozensheep\RightmoveADF\Values\EntranceFloors::GroundFloor;
-//$objRequest->property->details->condition = Frozensheep\RightmoveADF\Values\Conditions::Good;
-//$objRequest->property->details->accessibility()[] = Frozensheep\RightmoveADF\Values\Accessibilites::LiftAccess;
-//$objRequest->property->details->accessibility()[] = Frozensheep\RightmoveADF\Values\Accessibilites::WideDoorways;
-//$objRequest->property->details->heating()[] = Frozensheep\RightmoveADF\Values\Heatings::AirConditioning;
-//$objRequest->property->details->heating()[] = Frozensheep\RightmoveADF\Values\Heatings::Gas;
-//$objRequest->property->details->heating()[] = Frozensheep\RightmoveADF\Values\Heatings::EcoFriendly;
-//$objRequest->property->details->furnished_type = Frozensheep\RightmoveADF\Values\Furnishings::PartFurnished;
+//$objRequest->property->details->entrance_floor = Craiglockhart81\RightmoveADF\Values\EntranceFloors::GroundFloor;
+//$objRequest->property->details->condition = Craiglockhart81\RightmoveADF\Values\Conditions::Good;
+//$objRequest->property->details->accessibility()[] = Craiglockhart81\RightmoveADF\Values\Accessibilites::LiftAccess;
+//$objRequest->property->details->accessibility()[] = Craiglockhart81\RightmoveADF\Values\Accessibilites::WideDoorways;
+//$objRequest->property->details->heating()[] = Craiglockhart81\RightmoveADF\Values\Heatings::AirConditioning;
+//$objRequest->property->details->heating()[] = Craiglockhart81\RightmoveADF\Values\Heatings::Gas;
+//$objRequest->property->details->heating()[] = Craiglockhart81\RightmoveADF\Values\Heatings::EcoFriendly;
+//$objRequest->property->details->furnished_type = Craiglockhart81\RightmoveADF\Values\Furnishings::PartFurnished;
 //$objRequest->property->details->pets_allowed = true;
 //$objRequest->property->details->smokers_considered = true;
 //$objRequest->property->details->housing_benefit_considered = true;
@@ -126,8 +126,8 @@ $objRequest->property->details->bedrooms = 2;
 //$objRequest->property->details->sat_cable_tv_bill_inc = false;
 //$objRequest->property->details->internet_bill_inc = false;
 //$objRequest->property->details->business_for_sale = true;
-//$objRequest->property->details->comm_use_class()[] = Frozensheep\RightmoveADF\Values\CommercialUseClasses::A1;
-//$objRequest->property->details->comm_use_class()[] = Frozensheep\RightmoveADF\Values\CommercialUseClasses::A2;
+//$objRequest->property->details->comm_use_class()[] = Craiglockhart81\RightmoveADF\Values\CommercialUseClasses::A1;
+//$objRequest->property->details->comm_use_class()[] = Craiglockhart81\RightmoveADF\Values\CommercialUseClasses::A2;
 
 //
 //room definitions (up to 99)
@@ -137,7 +137,7 @@ $objLivingRoom->room_name = 'Living Room';
 //$objLivingRoom->room_description = 'A stylish modern layout with original polished wooden floors. South facing sash windows.';
 //$objLivingRoom->room_length = 4.7;
 //$objLivingRoom->room_width = 3.3;
-//$objLivingRoom->room_dimension_unit = Frozensheep\RightmoveADF\Values\DimensionUnits::Metres;
+//$objLivingRoom->room_dimension_unit = Craiglockhart81\RightmoveADF\Values\DimensionUnits::Metres;
 //$objLivingRoom->room_dimension_text = 'Chimney breast reduces part of width to 2.9m.';
 //$objLivingRoom->room_photo_urls()[] = 'http://lorempixel.com/800/600/';
 //$objLivingRoom->room_photo_urls()[] = 'http://lorempixel.com/800/600/';
@@ -152,24 +152,24 @@ $objDiningRoom->room_name = 'Dining Room';
 //media definitions (up to 999)
 //
 $objMedia1 = $objRequest->property->media()->create();
-$objMedia1->media_type = Frozensheep\RightmoveADF\Values\MediaTypes::Image;
+$objMedia1->media_type = Craiglockhart81\RightmoveADF\Values\MediaTypes::Image;
 $objMedia1->media_url = 'http://lorempixel.com/800/600/city/1';
 $objMedia1->caption = 'Front of house';
 $objMedia1->sort_order = 1;
 $objMedia1->media_update_date = 'now';
 
 $objMedia2 = $objRequest->property->media()->create();
-$objMedia2->media_type = Frozensheep\RightmoveADF\Values\MediaTypes::Image;
+$objMedia2->media_type = Craiglockhart81\RightmoveADF\Values\MediaTypes::Image;
 $objMedia2->media_url = 'http://lorempixel.com/800/600/city/2';
 
 $objMedia3 = $objRequest->property->media()->create();
-$objMedia3->media_type = Frozensheep\RightmoveADF\Values\MediaTypes::Image;
+$objMedia3->media_type = Craiglockhart81\RightmoveADF\Values\MediaTypes::Image;
 $objMedia3->media_url = 'http://lorempixel.com/800/600/city/3';
 
 //
 //principal (optional)
 //
-$objRequest->property->principal->principal_email_address = 'jacob@frozensheep.com';
+$objRequest->property->principal->principal_email_address = 'craig@hartcreative.co.uk';
 $objRequest->property->principal->auto_email_when_live = true;
 $objRequest->property->principal->auto_email_updates = true;
 

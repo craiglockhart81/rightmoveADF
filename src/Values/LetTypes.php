@@ -2,22 +2,22 @@
 /**
 *	This file contains the Let Types Enum class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Values;
+namespace Craiglockhart81\RightmoveADF\Values;
 
-use Frozensheep\RightmoveADF\Values\ValuesBase;
+use Craiglockhart81\RightmoveADF\Values\ValuesBase;
 
 /**
 *	Let Types Enum Class
 *
 *	Class for the different let types.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class LetTypes extends ValuesBase {

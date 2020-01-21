@@ -2,15 +2,15 @@
 /**
 *	Get Branch Property List Example.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
 require_once(__DIR__.'/../vendor/autoload.php');
 
-use Frozensheep\RightmoveADF\RightmoveADF;
+use Craiglockhart81\RightmoveADF\RightmoveADF;
 
 //include the config file
 require_once('config.php');
@@ -24,7 +24,7 @@ $objRequest = $objRightmoveADF->createRequest(RightmoveADF::GetBranchPropertyLis
 //set the details for the request
 $objRequest->network->network_id = NETWORK_ID;
 $objRequest->branch->branch_id = BRANCH_ID;
-//$objRequest->branch->channel = Frozensheep\RightmoveADF\Values\Channels::Lettings;
+//$objRequest->branch->channel = Craiglockhart81\RightmoveADF\Values\Channels::Lettings;
 
 print_r(json_encode($objRequest));
 

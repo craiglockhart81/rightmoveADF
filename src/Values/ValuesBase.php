@@ -2,13 +2,13 @@
 /**
 *	This file contains the Tenure Types Enum class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Values;
+namespace Craiglockhart81\RightmoveADF\Values;
 
 use MyCLabs\Enum\Enum;
 
@@ -17,7 +17,7 @@ use MyCLabs\Enum\Enum;
 *
 *	Class for the different tenure types.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class ValuesBase extends Enum implements \JsonSerializable  {

@@ -2,24 +2,24 @@
 /**
 *	This file contains the Branch Group model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Groups;
+namespace Craiglockhart81\RightmoveADF\Groups;
 
-use Frozensheep\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
-use Frozensheep\RightmoveADF\Values\Channels;
+use Craiglockhart81\RightmoveADF\Groups\GroupInterface;
+use Craiglockhart81\Synthesize\Synthesizer;
+use Craiglockhart81\RightmoveADF\Values\Channels;
 
 /**
 *	Branch Group Class
 *
 *	Class to handle Branch group.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class Branch implements GroupInterface, \JsonSerializable {
@@ -28,7 +28,7 @@ class Branch implements GroupInterface, \JsonSerializable {
 
 	protected $arrSynthesize = array(
 		'branch_id' => array('type' => 'int', 'required' => true),
-		'channel' => array('type' => 'enum', 'class' => 'Frozensheep\RightmoveADF\Values\Channels', 'required' => true),
+		'channel' => array('type' => 'enum', 'class' => 'Craiglockhart81\RightmoveADF\Values\Channels', 'required' => true),
 		'overseas' => array('type' => 'boolean')
 	);
 }

@@ -2,24 +2,24 @@
 /**
 *	This file contains the Room Group model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Groups;
+namespace Craiglockhart81\RightmoveADF\Groups;
 
-use Frozensheep\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
-use Frozensheep\RightmoveADF\Values\DimensionUnits;
+use Craiglockhart81\RightmoveADF\Groups\GroupInterface;
+use Craiglockhart81\Synthesize\Synthesizer;
+use Craiglockhart81\RightmoveADF\Values\DimensionUnits;
 
 /**
 *	Room Group Class
 *
 *	Class to handle Room group.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class Room implements GroupInterface, \JsonSerializable {
@@ -31,8 +31,8 @@ class Room implements GroupInterface, \JsonSerializable {
 		'room_description' => array('type' => 'string', 'max' => 1000),
 		'room_length' => array('type' => 'number', 'min' => 0),
 		'room_width' => array('type' => 'number', 'min' => 0),
-		'room_dimension_unit' => array('type' => 'enum', 'class' => 'Frozensheep\RightmoveADF\Values\DimensionUnits'),
+		'room_dimension_unit' => array('type' => 'enum', 'class' => 'Craiglockhart81\RightmoveADF\Values\DimensionUnits'),
 		'room_dimension_text' => array('type' => 'string', 'max' => 120),
-		'room_photo_urls' => array('type' => 'objectarray', 'class' => 'Frozensheep\Synthesize\Type\StringObject', 'max' => 10),
+		'room_photo_urls' => array('type' => 'objectarray', 'class' => 'Craiglockhart81\Synthesize\Type\StringObject', 'max' => 10),
 	);
 }

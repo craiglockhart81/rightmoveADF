@@ -2,25 +2,25 @@
 /**
 *	This file contains the Get Brand Phone Leads Request model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Request;
+namespace Craiglockhart81\RightmoveADF\Request;
 
-use Frozensheep\RightmoveADF\Request\RequestBase;
-use Frozensheep\RightmoveADF\Groups\Network;
-use Frozensheep\RightmoveADF\Groups\Brand;
-use Frozensheep\RightmoveADF\Groups\ExportPeriodTime;
+use Craiglockhart81\RightmoveADF\Request\RequestBase;
+use Craiglockhart81\RightmoveADF\Groups\Network;
+use Craiglockhart81\RightmoveADF\Groups\Brand;
+use Craiglockhart81\RightmoveADF\Groups\ExportPeriodTime;
 
 /**
 *	Get Brand Phone Leads Class
 *
 *	Class for the get brand phone leads request.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class GetBrandPhoneLeads extends RequestBase {
@@ -39,8 +39,8 @@ class GetBrandPhoneLeads extends RequestBase {
 	*	@var array $arrSynthesize The synthesize array.
 	*/
 	protected $arrSynthesize = array(
-		'network' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Network', 'required' => true),
-		'brand' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Brand', 'required' => true),
-		'export_period' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\ExportPeriodTime', 'required' => true)
+		'network' => array('type' => 'object', 'class' => 'Craiglockhart81\RightmoveADF\Groups\Network', 'required' => true),
+		'brand' => array('type' => 'object', 'class' => 'Craiglockhart81\RightmoveADF\Groups\Brand', 'required' => true),
+		'export_period' => array('type' => 'object', 'class' => 'Craiglockhart81\RightmoveADF\Groups\ExportPeriodTime', 'required' => true)
 	);
 }

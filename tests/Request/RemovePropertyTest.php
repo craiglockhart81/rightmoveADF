@@ -1,6 +1,6 @@
 <?php
 
-namespace Frozensheep\RightmoveADF\Tests\Request;
+namespace Craiglockhart81\RightmoveADF\Tests\Request;
 
 class RemovePropertyTest extends \PHPUnit_Framework_TestCase {
 

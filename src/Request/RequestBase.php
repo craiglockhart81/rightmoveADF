@@ -2,24 +2,24 @@
 /**
 *	This file contains the Request Interface class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Request;
+namespace Craiglockhart81\RightmoveADF\Request;
 
-use Frozensheep\RightmoveADF\Request\RequestInterface;
-use Frozensheep\RightmoveADF\RightmoveADF;
-use Frozensheep\Synthesize\Synthesizer;
+use Craiglockhart81\RightmoveADF\Request\RequestInterface;
+use Craiglockhart81\RightmoveADF\RightmoveADF;
+use Craiglockhart81\Synthesize\Synthesizer;
 
 /**
 *	Request Interface Class
 *
 *	Interface for all requests.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class RequestBase implements RequestInterface, \JsonSerializable {

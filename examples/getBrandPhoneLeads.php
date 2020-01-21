@@ -2,15 +2,15 @@
 /**
 *	Get Brand Phone Leads Example.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
 require_once(__DIR__.'/../vendor/autoload.php');
 
-use Frozensheep\RightmoveADF\RightmoveADF;
+use Craiglockhart81\RightmoveADF\RightmoveADF;
 
 //include the config file
 require_once('config.php');

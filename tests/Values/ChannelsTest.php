@@ -1,6 +1,6 @@
 <?php
 
-namespace Frozensheep\RightmoveADF\Tests\Values;
+namespace Craiglockhart81\RightmoveADF\Tests\Values;
 
 class ChannelsTest extends \PHPUnit_Framework_TestCase {
 

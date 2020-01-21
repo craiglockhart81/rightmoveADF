@@ -2,37 +2,37 @@
 /**
 *	This file contains the RightmoveADF class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	Craiglockhart81\RightmoveADF
+*	@author		Craig Lockhart <craig@hartcreative.co.uk>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF;
+namespace Craiglockhart81\RightmoveADF;
 
-use Frozensheep\Synthesize\Synthesizer;
-use Frozensheep\RightmoveADF\Exception\UnknownRequestTypeException;
-use Frozensheep\RightmoveADF\Curl;
-use Frozensheep\RightmoveADF\Request\SendProperty;
-use Frozensheep\RightmoveADF\Request\RemoveProperty;
-use Frozensheep\RightmoveADF\Request\GetBranchPropertyList;
-use Frozensheep\RightmoveADF\Request\AddPremiumListing;
-use Frozensheep\RightmoveADF\Request\AddFeaturedProperty;
-use Frozensheep\RightmoveADF\Request\RemoveFeaturedProperty;
-use Frozensheep\RightmoveADF\Request\GetPropertyPerformance;
-use Frozensheep\RightmoveADF\Request\GetBranchPerformance;
-use Frozensheep\RightmoveADF\Request\GetBrandEmails;
-use Frozensheep\RightmoveADF\Request\GetBranchEmails;
-use Frozensheep\RightmoveADF\Request\GetBrandPhoneLeads;
-use Frozensheep\RightmoveADF\Request\GetBranchPhoneLeads;
-use Frozensheep\RightmoveADF\Request\GetPropertyEmails;
+use Craiglockhart81\Synthesize\Synthesizer;
+use Craiglockhart81\RightmoveADF\Exception\UnknownRequestTypeException;
+use Craiglockhart81\RightmoveADF\Curl;
+use Craiglockhart81\RightmoveADF\Request\SendProperty;
+use Craiglockhart81\RightmoveADF\Request\RemoveProperty;
+use Craiglockhart81\RightmoveADF\Request\GetBranchPropertyList;
+use Craiglockhart81\RightmoveADF\Request\AddPremiumListing;
+use Craiglockhart81\RightmoveADF\Request\AddFeaturedProperty;
+use Craiglockhart81\RightmoveADF\Request\RemoveFeaturedProperty;
+use Craiglockhart81\RightmoveADF\Request\GetPropertyPerformance;
+use Craiglockhart81\RightmoveADF\Request\GetBranchPerformance;
+use Craiglockhart81\RightmoveADF\Request\GetBrandEmails;
+use Craiglockhart81\RightmoveADF\Request\GetBranchEmails;
+use Craiglockhart81\RightmoveADF\Request\GetBrandPhoneLeads;
+use Craiglockhart81\RightmoveADF\Request\GetBranchPhoneLeads;
+use Craiglockhart81\RightmoveADF\Request\GetPropertyEmails;
 
 /**
 *	RightmoveADF Class
 *
 *	Class for the RightmoveADF.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	Craiglockhart81\RightmoveADF
 *
 */
 class RightmoveADF {
