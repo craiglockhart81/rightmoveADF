@@ -144,7 +144,8 @@ class RightmoveADF {
 	*/
 	public function send($objRequest, $strURLOverride = '', $boolDebug = false){
 		$strURL = ($strURLOverride) ? $strURLOverride : $objRequest->getURL($this->environment);
-
+		print_r(json_encode($objRequest));
+		exit();
 		return Curl::send(json_encode($objRequest), $strURL, $this->cert_file, $this->cert_pass, $boolDebug);
 	}
 }
