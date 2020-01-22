@@ -11,7 +11,7 @@
 namespace Craiglockhart81\RightmoveADF\Groups;
 
 use Craiglockhart81\RightmoveADF\Groups\GroupInterface;
-use Craiglockhart81\Synthesize\Synthesizer;
+use Frozensheep\Synthesize\Synthesizer;
 
 /**
 *	Address Group Class
