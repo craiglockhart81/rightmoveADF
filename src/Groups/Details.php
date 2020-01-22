@@ -22,6 +22,7 @@ use Craiglockhart81\RightmoveADF\Values\Heatings;
 use Craiglockhart81\RightmoveADF\Values\Furnishings;
 use Craiglockhart81\RightmoveADF\Values\CommercialuseClasses;
 use Craiglockhart81\RightmoveADF\Groups\Room;
+use Craiglockhart81\RightmoveADF\Groups\Sizing;
 
 /**
 *	Details Group Class
@@ -49,6 +50,7 @@ class Details implements GroupInterface, \JsonSerializable {
 		'internal_area_unit' => array('type' => 'enum', 'class' => 'Craiglockhart81\RightmoveADF\Values\AreaUnits'),
 		'land_area' => array('type' => 'number'),
 		'land_area_unit' => array('type' => 'enum', 'class' => 'Craiglockhart81\RightmoveADF\Values\AreaUnits'),
+		'sizing' => array('type' => 'objectarray', 'class' => 'Craiglockhart81\RightmoveADF\Groups\Sizing', 'max' => 3),
 		'minimum' => array('type' => 'int', 'min' => 0),
 		'maximum' => array('type' => 'int', 'min' => 0),
 		'area_unit' => array('type' => 'enum', 'class' => 'Craiglockhart81\RightmoveADF\Values\AreaUnits'),
