@@ -11,7 +11,7 @@
 namespace Craiglockhart81\RightmoveADF\Groups;
 
 use Craiglockhart81\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
+use Craiglockhart81\Synthesize\Synthesizer;
 
 /**
 *	Property Ref Group Class

@@ -11,7 +11,7 @@
 namespace Craiglockhart81\RightmoveADF\Groups;
 
 use Craiglockhart81\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
+use Craiglockhart81\Synthesize\Synthesizer;
 use Craiglockhart81\RightmoveADF\Values\Parkings;
 use Craiglockhart81\RightmoveADF\Values\OutsideSpaces;
 use Craiglockhart81\RightmoveADF\Values\AreaUnits;
@@ -39,7 +39,7 @@ class Details implements GroupInterface, \JsonSerializable {
 	protected $arrSynthesize = array(
 		'summary' => array('type' => 'string', 'required' => true, 'max' => 1000),
 		'description' => array('type' => 'string', 'required' => true, 'max' => 32000),
-		'features' => array('type' => 'objectarray', 'class' => 'Frozensheep\Synthesize\Type\StringObject', 'max' => 10),
+		'features' => array('type' => 'objectarray', 'class' => 'Craiglockhart81\Synthesize\Type\StringObject', 'max' => 10),
 		'bedrooms' => array('type' => 'int', 'required' => true, 'min' => 0),
 		'bathrooms' => array('type' => 'int', 'min' => 0),
 		'reception_rooms' => array('type' => 'int', 'min' => 0),
@@ -73,11 +73,13 @@ class Details implements GroupInterface, \JsonSerializable {
 		'electricity_bill_inc' => array('type' => 'boolean'),
 		'oil_bill_inc' => array('type' => 'boolean'),
 		'council_tax_inc' => array('type' => 'boolean'),
+		'council_tax_exempt ' => array('type' => 'boolean'),
 		'tv_licence_inc' => array('type' => 'boolean'),
 		'sat_cable_tv_bill_inc' => array('type' => 'boolean'),
 		'internet_bill_inc' => array('type' => 'boolean'),
 		'business_for_sale' => array('type' => 'boolean'),
 		'comm_use_class' => array('type' => 'objectarray', 'class' => 'Craiglockhart81\RightmoveADF\Values\CommercialuseClasses'),
+		'council_tax_band' => array('type' => 'string', 'max' => 2),
 		'rooms' => array('type' => 'objectarray', 'class' => 'Craiglockhart81\RightmoveADF\Groups\Room', 'max' => 99)
 	);
 }
