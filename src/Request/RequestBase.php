@@ -12,7 +12,7 @@ namespace Craiglockhart81\RightmoveADF\Request;
 
 use Craiglockhart81\RightmoveADF\Request\RequestInterface;
 use Craiglockhart81\RightmoveADF\RightmoveADF;
-use Frozensheep\Synthesize\Synthesizer;
+use Craiglockhart81\Synthesize\Synthesizer;
 
 /**
 *	Request Interface Class

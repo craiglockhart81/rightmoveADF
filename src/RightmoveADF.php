@@ -10,7 +10,7 @@
 
 namespace Craiglockhart81\RightmoveADF;
 
-use Frozensheep\Synthesize\Synthesizer;
+use Craiglockhart81\Synthesize\Synthesizer;
 use Craiglockhart81\RightmoveADF\Exception\UnknownRequestTypeException;
 use Craiglockhart81\RightmoveADF\Curl;
 use Craiglockhart81\RightmoveADF\Request\SendProperty;
