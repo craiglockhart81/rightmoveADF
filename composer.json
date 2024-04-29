@@ -13,7 +13,7 @@
 		}
 	],
 	"require": {
-		"php": ">=5.4",
+		"php": ">=8.0",
 		"ext-curl": "*",
 		"craiglockhart81/synthesize": "1.*"
 	},
@@ -22,6 +22,11 @@
 			"Craiglockhart81\\RightmoveADF\\": "src"
 		}
 	},
+    "repositories": [
+		{
+			"type": "vcs", "url": "https://github.com/craiglockhart81/synthesize"
+		}
+	],
 	"autoload-dev": {
 		"psr-4": {
 			"Craiglockhart81\\RightmoveADF\\Tests\\": "tests"
